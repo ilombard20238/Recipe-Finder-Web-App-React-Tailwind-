@@ -1,0 +1,8 @@
+"homepage": "https://YOUR_GITHUB_USERNAME.github.io/recipe-finder",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+
+npm install --save gh-pages
