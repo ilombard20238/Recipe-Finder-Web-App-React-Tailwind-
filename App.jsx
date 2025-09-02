@@ -12,10 +12,10 @@ export default function App() {
   };
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4">🍲 Recipe Finder</h1>
+    <div className="p-6 bg-pink-50 min-h-screen">
+      <h1 className="text-3xl font-bold mb-4 text-pink-600 text-center">🍲 Recipe Finder</h1>
       <SearchBar onSearch={fetchRecipes} />
-      <div className="grid grid-cols-3 gap-4 mt-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
         {recipes.map((r) => <RecipeCard key={r.id} recipe={r} />)}
       </div>
     </div>
